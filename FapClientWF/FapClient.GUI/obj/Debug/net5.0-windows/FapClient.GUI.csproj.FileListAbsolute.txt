@@ -1,0 +1,7 @@
+F:\Source\FapClientWF\FapClient.GUI\obj\Debug\net5.0-windows\FapClient.GUI.csproj.AssemblyReference.cache
+F:\Source\FapClientWF\FapClient.GUI\obj\Debug\net5.0-windows\FapClient.GUI.Form1.resources
+F:\Source\FapClientWF\FapClient.GUI\obj\Debug\net5.0-windows\FapClient.GUI.csproj.GenerateResource.cache
+F:\Source\FapClientWF\FapClient.GUI\obj\Debug\net5.0-windows\FapClient.GUI.GeneratedMSBuildEditorConfig.editorconfig
+F:\Source\FapClientWF\FapClient.GUI\obj\Debug\net5.0-windows\FapClient.GUI.AssemblyInfoInputs.cache
+F:\Source\FapClientWF\FapClient.GUI\obj\Debug\net5.0-windows\FapClient.GUI.AssemblyInfo.cs
+F:\Source\FapClientWF\FapClient.GUI\obj\Debug\net5.0-windows\FapClient.GUI.csproj.CoreCompileInputs.cache
