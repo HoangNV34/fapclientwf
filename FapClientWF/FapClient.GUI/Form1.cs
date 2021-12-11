@@ -9,7 +9,7 @@ namespace FapClient.GUI
     {
         private readonly ICampusRepository campusRepository = new CampusRepository();
         private readonly ITermRepository termRepository = new TermRepository();
-        private readonly ICourseRepository courseRepository = new CourseRepository();
+        private readonly ISubjectRepository subjectRepository = new SubjectRepository();
         private readonly IStudentRepository studentRepository = new StudentRepository();
 
         public Form1()
@@ -48,6 +48,18 @@ namespace FapClient.GUI
             }
         }
 
+        private void LoadSubjectList()
+        {
+            if(lboxStudent.SelectedIndex != -1)
+            {
+                var sId = Convert.ToInt32(lboxStudent.SelectedValue.ToString());
+                var tId = Convert.ToInt32(cbbTerm.SelectedValue.ToString());
+                lboxCourse.DataSource = subjectRepository.GetByStudentAndTerm(sId, tId);
+                lboxCourse.DisplayMember = "SubjectName";
+                lboxCourse.ValueMember = "SubjectId";
+            }
+        }
+
         private void cbbCampus_SelectedIndexChanged(object sender, System.EventArgs e)
         {
             LoadStudentList();
@@ -60,6 +72,7 @@ namespace FapClient.GUI
                 var id = Convert.ToInt32(lboxStudent.SelectedValue.ToString());
                 txtStudent.Text = studentRepository.GetById(id).FullName;
                 LoadTermList();
+                LoadSubjectList();
             }
         }
 
