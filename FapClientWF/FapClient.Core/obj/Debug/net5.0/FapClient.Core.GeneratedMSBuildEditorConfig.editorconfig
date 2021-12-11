@@ -7,4 +7,4 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = FapClient.Core
-build_property.ProjectDir = F:\Source\FapClientWF\FapClient.Core\
+build_property.ProjectDir = F:\Git Project\fapclientwf\FapClientWF\FapClient.Core\

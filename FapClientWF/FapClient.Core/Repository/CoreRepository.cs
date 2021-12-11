@@ -7,16 +7,15 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FapClient.Core.Infrastructure.Repository
+namespace FapClient.Core.Repository
 {
     public class CoreRepository<T> : ICoreRepository<T> where T : class
     {
         protected readonly AP2Context _context = new AP2Context();
         private readonly DbSet<T> dbSet;
 
-        public CoreRepository(AP2Context context)
+        public CoreRepository()
         {
-            _context = context;
             var typeOfDbSet = typeof(DbSet<T>);
             foreach (var prop in _context.GetType().GetProperties())
             {

@@ -6177,11 +6177,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Source\\FapClientWF\\FapClient.Core\\FapClient.Core.csproj",
+      "projectUniqueName": "F:\\Git Project\\fapclientwf\\FapClientWF\\FapClient.Core\\FapClient.Core.csproj",
       "projectName": "FapClient.Core",
-      "projectPath": "F:\\Source\\FapClientWF\\FapClient.Core\\FapClient.Core.csproj",
+      "projectPath": "F:\\Git Project\\fapclientwf\\FapClientWF\\FapClient.Core\\FapClient.Core.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "F:\\Source\\FapClientWF\\FapClient.Core\\obj\\",
+      "outputPath": "F:\\Git Project\\fapclientwf\\FapClientWF\\FapClient.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

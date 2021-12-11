@@ -1,0 +1,16 @@
+F:\Git Project\fapclientwf\FapClientWF\FapClient.Service\bin\Debug\net5.0\appsettings.json
+F:\Git Project\fapclientwf\FapClientWF\FapClient.Service\bin\Debug\net5.0\FapClient.Service.deps.json
+F:\Git Project\fapclientwf\FapClientWF\FapClient.Service\bin\Debug\net5.0\FapClient.Service.dll
+F:\Git Project\fapclientwf\FapClientWF\FapClient.Service\bin\Debug\net5.0\ref\FapClient.Service.dll
+F:\Git Project\fapclientwf\FapClientWF\FapClient.Service\bin\Debug\net5.0\FapClient.Service.pdb
+F:\Git Project\fapclientwf\FapClientWF\FapClient.Service\bin\Debug\net5.0\FapClient.Core.dll
+F:\Git Project\fapclientwf\FapClientWF\FapClient.Service\bin\Debug\net5.0\FapClient.Core.pdb
+F:\Git Project\fapclientwf\FapClientWF\FapClient.Service\obj\Debug\net5.0\FapClient.Service.csproj.AssemblyReference.cache
+F:\Git Project\fapclientwf\FapClientWF\FapClient.Service\obj\Debug\net5.0\FapClient.Service.GeneratedMSBuildEditorConfig.editorconfig
+F:\Git Project\fapclientwf\FapClientWF\FapClient.Service\obj\Debug\net5.0\FapClient.Service.AssemblyInfoInputs.cache
+F:\Git Project\fapclientwf\FapClientWF\FapClient.Service\obj\Debug\net5.0\FapClient.Service.AssemblyInfo.cs
+F:\Git Project\fapclientwf\FapClientWF\FapClient.Service\obj\Debug\net5.0\FapClient.Service.csproj.CoreCompileInputs.cache
+F:\Git Project\fapclientwf\FapClientWF\FapClient.Service\obj\Debug\net5.0\FapClient.Service.csproj.CopyComplete
+F:\Git Project\fapclientwf\FapClientWF\FapClient.Service\obj\Debug\net5.0\FapClient.Service.dll
+F:\Git Project\fapclientwf\FapClientWF\FapClient.Service\obj\Debug\net5.0\ref\FapClient.Service.dll
+F:\Git Project\fapclientwf\FapClientWF\FapClient.Service\obj\Debug\net5.0\FapClient.Service.pdb

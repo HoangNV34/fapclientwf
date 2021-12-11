@@ -20,6 +20,8 @@ namespace FapClient.Core.Models
         public string MidName { get; set; }
         public string LastName { get; set; }
 
+        public string FullName => LastName +" "+ MidName +" "+ FirstName;
+
         public virtual ICollection<Grade> Grades { get; set; }
         public virtual ICollection<RollCallBook> RollCallBooks { get; set; }
         public virtual ICollection<StudentCourse> StudentCourses { get; set; }

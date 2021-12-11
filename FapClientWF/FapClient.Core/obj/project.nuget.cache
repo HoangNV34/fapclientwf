@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "a0u7K2UeAQdnpOGWu0n6TAvnzC0j3enaWxWds3NLxkIAZxQRXQykQy/HGzQiuTqeds/QuUa5PK7WbkDgsq2BJg==",
+  "dgSpecHash": "tinT/IQmQcvenzwkDbazLVfckSRCPi+JJP9sZtU6Tz31FOPNEWxB/nS2iWS7zpo7isybFjD4u7NSSEBnLL5CpQ==",
   "success": true,
-  "projectFilePath": "F:\\Source\\FapClientWF\\FapClient.Core\\FapClient.Core.csproj",
+  "projectFilePath": "F:\\Git Project\\fapclientwf\\FapClientWF\\FapClient.Core\\FapClient.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

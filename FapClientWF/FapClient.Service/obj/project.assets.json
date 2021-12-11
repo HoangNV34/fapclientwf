@@ -6099,11 +6099,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Source\\FapClientWF\\FapClient.Service\\FapClient.Service.csproj",
+      "projectUniqueName": "F:\\Git Project\\fapclientwf\\FapClientWF\\FapClient.Service\\FapClient.Service.csproj",
       "projectName": "FapClient.Service",
-      "projectPath": "F:\\Source\\FapClientWF\\FapClient.Service\\FapClient.Service.csproj",
+      "projectPath": "F:\\Git Project\\fapclientwf\\FapClientWF\\FapClient.Service\\FapClient.Service.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "F:\\Source\\FapClientWF\\FapClient.Service\\obj\\",
+      "outputPath": "F:\\Git Project\\fapclientwf\\FapClientWF\\FapClient.Service\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6120,8 +6120,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "F:\\Source\\FapClientWF\\FapClient.Core\\FapClient.Core.csproj": {
-              "projectPath": "F:\\Source\\FapClientWF\\FapClient.Core\\FapClient.Core.csproj"
+            "F:\\Git Project\\fapclientwf\\FapClientWF\\FapClient.Core\\FapClient.Core.csproj": {
+              "projectPath": "F:\\Git Project\\fapclientwf\\FapClientWF\\FapClient.Core\\FapClient.Core.csproj"
             }
           }
         }

@@ -1,17 +1,93 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Source\\FapClientWF\\FapClient.GUI\\FapClient.GUI.csproj": {}
+    "F:\\Git Project\\fapclientwf\\FapClientWF\\FapClient.GUI\\FapClient.GUI.csproj": {}
   },
   "projects": {
-    "F:\\Source\\FapClientWF\\FapClient.GUI\\FapClient.GUI.csproj": {
+    "F:\\Git Project\\fapclientwf\\FapClientWF\\FapClient.Core\\FapClient.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Source\\FapClientWF\\FapClient.GUI\\FapClient.GUI.csproj",
-        "projectName": "FapClient.GUI",
-        "projectPath": "F:\\Source\\FapClientWF\\FapClient.GUI\\FapClient.GUI.csproj",
+        "projectUniqueName": "F:\\Git Project\\fapclientwf\\FapClientWF\\FapClient.Core\\FapClient.Core.csproj",
+        "projectName": "FapClient.Core",
+        "projectPath": "F:\\Git Project\\fapclientwf\\FapClientWF\\FapClient.Core\\FapClient.Core.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "F:\\Source\\FapClientWF\\FapClient.GUI\\obj\\",
+        "outputPath": "F:\\Git Project\\fapclientwf\\FapClientWF\\FapClient.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\Git Project\\fapclientwf\\FapClientWF\\FapClient.GUI\\FapClient.GUI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Git Project\\fapclientwf\\FapClientWF\\FapClient.GUI\\FapClient.GUI.csproj",
+        "projectName": "FapClient.GUI",
+        "projectPath": "F:\\Git Project\\fapclientwf\\FapClientWF\\FapClient.GUI\\FapClient.GUI.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "F:\\Git Project\\fapclientwf\\FapClientWF\\FapClient.GUI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,7 +103,11 @@
         "frameworks": {
           "net5.0-windows7.0": {
             "targetAlias": "net5.0-windows",
-            "projectReferences": {}
+            "projectReferences": {
+              "F:\\Git Project\\fapclientwf\\FapClientWF\\FapClient.Core\\FapClient.Core.csproj": {
+                "projectPath": "F:\\Git Project\\fapclientwf\\FapClientWF\\FapClient.Core\\FapClient.Core.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

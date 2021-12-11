@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "g37WZDeu/AxcFw/Tx6614LnoqmVYUFbTMP6eK7A9CVOzF4Nu2gDr94NOqfnvl4s6uQNeL8vSjp0+YH14h9VQvg==",
+  "dgSpecHash": "msOetoSFwtFPo9zngZs3mUTSzGN2liH9FyKx5h7NgFtYiBfbM2fvqykedik3zHLIGmoqb2ag61EOaTWB2ACkOg==",
   "success": true,
-  "projectFilePath": "F:\\Source\\FapClientWF\\FapClient.Service\\FapClient.Service.csproj",
+  "projectFilePath": "F:\\Git Project\\fapclientwf\\FapClientWF\\FapClient.Service\\FapClient.Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
