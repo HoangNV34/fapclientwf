@@ -81,15 +81,7 @@ namespace FapClient.GUI
             string search = txtStudent.Text;
             if (!string.IsNullOrEmpty(search))
             {
-                lboxStudent.ClearSelected();
-                for(int i = lboxStudent.Items.Count-1; i >=0; i--)
-                {
-                    if (lboxStudent.Items[i].ToString().ToLower().Contains(search.ToLower()))
-                    {
-                        lboxStudent.SetSelected(i, true);
-                        break;
-                    }
-                }
+                
             }
         }
     }

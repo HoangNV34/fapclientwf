@@ -196,5 +196,6 @@
         private System.Windows.Forms.TextBox txtStudent;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ListBox lboxStudent;
+        private System.Windows.Forms.TextBox txtTemp;
     }
 }
