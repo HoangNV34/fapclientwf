@@ -1,5 +1,4 @@
-﻿using FapClient.Core.Models;
-using FapClient.Core.Repository;
+﻿using FapClient.Core.Repository;
 using System;
 using System.Windows.Forms;
 
@@ -11,6 +10,7 @@ namespace FapClient.GUI
         private readonly ITermRepository termRepository = new TermRepository();
         private readonly ISubjectRepository subjectRepository = new SubjectRepository();
         private readonly IStudentRepository studentRepository = new StudentRepository();
+        private readonly IRollCallBookRepository rollCallBookRepository = new RollCallBookRepository();
 
         public Form1()
         {
@@ -60,6 +60,17 @@ namespace FapClient.GUI
             }
         }
 
+        private void LoadReport()
+        {
+            if(lboxCourse.SelectedIndex != -1)
+            {
+                var sId = Convert.ToInt32(lboxStudent.SelectedValue.ToString());
+                var tId = Convert.ToInt32(cbbTerm.SelectedValue.ToString());
+                var subId = Convert.ToInt32(lboxCourse.SelectedValue.ToString());
+                dgv.DataSource = rollCallBookRepository.GetStudent(sId, subId, tId);
+            }
+        }
+
         private void cbbCampus_SelectedIndexChanged(object sender, System.EventArgs e)
         {
             LoadStudentList();
@@ -82,6 +93,14 @@ namespace FapClient.GUI
             if (!string.IsNullOrEmpty(search))
             {
                 
+            }
+        }
+
+        private void lboxCourse_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (lboxCourse.SelectedIndex != -1)
+            {
+                LoadReport();
             }
         }
     }

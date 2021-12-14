@@ -98,6 +98,7 @@
             this.lboxCourse.Name = "lboxCourse";
             this.lboxCourse.Size = new System.Drawing.Size(520, 94);
             this.lboxCourse.TabIndex = 5;
+            this.lboxCourse.SelectedIndexChanged += new System.EventHandler(this.lboxCourse_SelectedIndexChanged);
             // 
             // label4
             // 

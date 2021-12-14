@@ -14,19 +14,8 @@ F:\Source\FapClientWF\FapClient.Core\obj\Debug\net5.0\FapClient.Core.dll
 F:\Source\FapClientWF\FapClient.Core\obj\Debug\net5.0\ref\FapClient.Core.dll
 F:\Source\FapClientWF\FapClient.Core\obj\Debug\net5.0\FapClient.Core.pdb
 F:\Source\FapClientWF\FapClient.Core\obj\Debug\net5.0\FapClient.Core.genruntimeconfig.cache
-F:\Git Project\fapclientwf\FapClientWF\FapClient.Core\bin\Debug\net5.0\appsettings.json
-F:\Git Project\fapclientwf\FapClientWF\FapClient.Core\bin\Debug\net5.0\FapClient.Core.deps.json
-F:\Git Project\fapclientwf\FapClientWF\FapClient.Core\bin\Debug\net5.0\FapClient.Core.runtimeconfig.json
-F:\Git Project\fapclientwf\FapClientWF\FapClient.Core\bin\Debug\net5.0\FapClient.Core.runtimeconfig.dev.json
-F:\Git Project\fapclientwf\FapClientWF\FapClient.Core\bin\Debug\net5.0\FapClient.Core.dll
-F:\Git Project\fapclientwf\FapClientWF\FapClient.Core\bin\Debug\net5.0\ref\FapClient.Core.dll
-F:\Git Project\fapclientwf\FapClientWF\FapClient.Core\bin\Debug\net5.0\FapClient.Core.pdb
 F:\Git Project\fapclientwf\FapClientWF\FapClient.Core\obj\Debug\net5.0\FapClient.Core.csproj.AssemblyReference.cache
 F:\Git Project\fapclientwf\FapClientWF\FapClient.Core\obj\Debug\net5.0\FapClient.Core.GeneratedMSBuildEditorConfig.editorconfig
 F:\Git Project\fapclientwf\FapClientWF\FapClient.Core\obj\Debug\net5.0\FapClient.Core.AssemblyInfoInputs.cache
 F:\Git Project\fapclientwf\FapClientWF\FapClient.Core\obj\Debug\net5.0\FapClient.Core.AssemblyInfo.cs
 F:\Git Project\fapclientwf\FapClientWF\FapClient.Core\obj\Debug\net5.0\FapClient.Core.csproj.CoreCompileInputs.cache
-F:\Git Project\fapclientwf\FapClientWF\FapClient.Core\obj\Debug\net5.0\FapClient.Core.dll
-F:\Git Project\fapclientwf\FapClientWF\FapClient.Core\obj\Debug\net5.0\ref\FapClient.Core.dll
-F:\Git Project\fapclientwf\FapClientWF\FapClient.Core\obj\Debug\net5.0\FapClient.Core.pdb
-F:\Git Project\fapclientwf\FapClientWF\FapClient.Core\obj\Debug\net5.0\FapClient.Core.genruntimeconfig.cache
