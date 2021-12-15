@@ -20,7 +20,6 @@ namespace FapClient.Core.Models
 
         public string FullName => InstructorFirstName + " " + InstructorMidName + " "+InstructorLastName;
 
-        public string ShortName { get; set; }
         public int? DepartmentId { get; set; }
 
         public virtual Department Department { get; set; }

@@ -2,7 +2,8 @@
 
 namespace FapClient.Core.Repository
 {
-    public interface IRollCallBookRepository : ICoreRepository<RollCallBook>
+    public class RoomRepository : CoreRepository<Room>, IRoomRepository
     {
+
     }
 }

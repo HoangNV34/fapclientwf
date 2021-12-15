@@ -5,6 +5,8 @@ namespace FapClient.Core.Repository
 {
     public interface IInstructorRepository : ICoreRepository<Instructor>
     {
-        List<Instructor> GetAll();
+        char GetFirstLetter(string text);
+
+        int? GetLastNumber(string text);
     }
 }

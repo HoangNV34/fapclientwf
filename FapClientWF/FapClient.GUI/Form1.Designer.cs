@@ -122,12 +122,14 @@
             // 
             // dgv
             // 
+            this.dgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv.Location = new System.Drawing.Point(21, 224);
             this.dgv.Name = "dgv";
             this.dgv.RowTemplate.Height = 25;
             this.dgv.Size = new System.Drawing.Size(1049, 262);
             this.dgv.TabIndex = 8;
+            this.dgv.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgv_CellFormatting);
             // 
             // txtStudent
             // 
@@ -197,6 +199,5 @@
         private System.Windows.Forms.TextBox txtStudent;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ListBox lboxStudent;
-        private System.Windows.Forms.TextBox txtTemp;
     }
 }

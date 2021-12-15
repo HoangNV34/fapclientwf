@@ -8,27 +8,6 @@ namespace FapClient.Core.Repository
 {
     public class InstructorRepository : CoreRepository<Instructor>, IInstructorRepository
     {
-        public List<Instructor> GetAll()
-        {
-            var list = _context.Instructors.ToList();
-            for (int i = 0; i < list.Count - 1; i++)
-            {
-                if (list[i].FullName.Equals(list[i + 1].FullName))
-                {
-                    list[i].ShortName = list[i].InstructorFirstName
-                                + GetFirstLetter(list[i].InstructorLastName.ToUpper())
-                                + GetFirstLetter(list[i].InstructorMidName.ToUpper()) + GetLastNumber(list[i].ShortName);
-                }
-                else
-                {
-                    list[i].ShortName = list[i].InstructorFirstName
-                                + GetFirstLetter(list[i].InstructorLastName.ToUpper())
-                                + GetFirstLetter(list[i].InstructorMidName.ToUpper());
-                }
-            }
-            return list;
-        }
-
         public char GetFirstLetter(string text)
         {
             char first = text.Split("").Select(s => s[0]).FirstOrDefault();
