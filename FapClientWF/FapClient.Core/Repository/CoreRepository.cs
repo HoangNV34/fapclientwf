@@ -75,7 +75,7 @@ namespace FapClient.Core.Repository
             return dbSet.Where(where);
         }
 
-        public bool Update(T entity)
+        public virtual bool Update(T entity)
         {
             _context.Entry(entity).State = EntityState.Modified;
             return _context.SaveChanges() > 0;

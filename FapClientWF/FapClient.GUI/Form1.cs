@@ -1,5 +1,6 @@
 ﻿using FapClient.Core.Repository;
 using System;
+using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -63,7 +64,7 @@ namespace FapClient.GUI
             }
         }
 
-        private void LoadReport()
+        public void LoadReport()
         {
             if (lboxCourse.SelectedIndex != -1)
             {
@@ -76,8 +77,9 @@ namespace FapClient.GUI
                     subId = tempSubId;
                 }
                 dgv.DataSource = studentAttendentRepository.GetStudent(sId, subId, tId);
-                dgv.Columns[0].Visible = false;
-                dgv.Columns[1].Visible = false;
+                dgv.Columns[0].Visible = false; //RollCallBookId
+                dgv.Columns[1].Visible = false; //TeachingScheduleId
+                dgv.Columns[2].Visible = false; //StudentId
                 dgv.Columns["TeachingDate"].DisplayIndex = 0;
                 dgv.Columns["TeachingDate"].HeaderText = "Date";
                 dgv.Columns["RoomId"].HeaderText = "Room";
@@ -102,15 +104,6 @@ namespace FapClient.GUI
             }
         }
 
-        private void txtStudent_TextChanged(object sender, EventArgs e)
-        {
-            string search = txtStudent.Text;
-            if (!string.IsNullOrEmpty(search))
-            {
-
-            }
-        }
-
         private void lboxCourse_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (lboxCourse.SelectedIndex != -1)
@@ -121,19 +114,19 @@ namespace FapClient.GUI
 
         private void dgv_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
-            if (e.ColumnIndex == 5)
+            if (e.ColumnIndex == 6)
             {
                 string s = string.Format("{0:dddd dd/MM/yyyy}", e.Value);
                 e.Value = s;
             }
 
-            if (e.ColumnIndex == 3)
+            if (e.ColumnIndex == 4)
             {
                 var room = roomRepository.GetById(Convert.ToInt32(e.Value.ToString()));
                 e.Value = room.RoomCode;
             }
 
-            if (e.ColumnIndex == 4)
+            if (e.ColumnIndex == 5)
             {
                 var instructor = instructorRepository.GetById(Convert.ToInt32(e.Value.ToString()));
                 if (instructor != null)
@@ -144,21 +137,67 @@ namespace FapClient.GUI
                 }
             }
 
-            if (e.ColumnIndex == 6)
+            if (e.ColumnIndex == 7)
             {
                 if ((bool)e.Value)
                 {
                     e.Value = "Present";
+                    e.CellStyle.ForeColor = Color.Green;
                 }
                 else
                 {
                     e.Value = "Absent";
+                    e.CellStyle.ForeColor = Color.Red;
                 }
                 if (e.Value == null)
                 {
                     e.Value = "Future";
                 }
             }
+        }
+
+        private void dgv_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int rollCallBookId;
+            int teachingScheduleId;
+            
+            if(e.RowIndex != -1)
+            {
+                DataGridViewRow row = dgv.Rows[e.RowIndex];
+                rollCallBookId = Convert.ToInt32(row.Cells[0].Value.ToString());
+                teachingScheduleId = Convert.ToInt32(row.Cells[1].Value.ToString());
+                EditForm editForm = new EditForm(rollCallBookId, teachingScheduleId);
+                editForm.ShowDialog();
+                LoadReport();
+            }
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            Search();
+        }
+
+        private void txtStudent_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                if (string.IsNullOrEmpty(txtStudent.Text))
+                {
+                    LoadStudentList();
+                }
+                else
+                {
+                    Search();
+                }
+            }
+        }
+
+        private void Search()
+        {
+            var students = studentRepository.Search(txtStudent.Text);
+            lboxStudent.DataSource = students;
+            lboxStudent.DisplayMember = "FullName";
+            lboxStudent.ValueMember = "StudentId";
         }
     }
 }

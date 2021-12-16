@@ -6,5 +6,7 @@ namespace FapClient.Core.Repository
     public interface IStudentAttendentRepository : ICoreRepository<StudentAttendent>
     {
         List<StudentAttendent> GetStudent(int sId, int subjectId, int termId);
+
+        StudentAttendent GetDetails(int rollCallBookId, int teachingScheduleId);
     }
 }

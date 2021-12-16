@@ -10,6 +10,8 @@ namespace FapClient.Core.Models
     {
         public int RollCallBookId { get; set; }
 
+        public int? TeachingScheduleId { get; set; }
+
         public int StudentId { get; set; }
 
         public int? Slot { get; set; }

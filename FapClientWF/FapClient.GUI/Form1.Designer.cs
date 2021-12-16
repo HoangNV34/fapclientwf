@@ -40,6 +40,7 @@
             this.txtStudent = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.lboxStudent = new System.Windows.Forms.ListBox();
+            this.btnSearch = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.SuspendLayout();
             // 
@@ -94,9 +95,9 @@
             // 
             this.lboxCourse.FormattingEnabled = true;
             this.lboxCourse.ItemHeight = 15;
-            this.lboxCourse.Location = new System.Drawing.Point(549, 80);
+            this.lboxCourse.Location = new System.Drawing.Point(587, 80);
             this.lboxCourse.Name = "lboxCourse";
-            this.lboxCourse.Size = new System.Drawing.Size(520, 94);
+            this.lboxCourse.Size = new System.Drawing.Size(482, 94);
             this.lboxCourse.TabIndex = 5;
             this.lboxCourse.SelectedIndexChanged += new System.EventHandler(this.lboxCourse_SelectedIndexChanged);
             // 
@@ -104,7 +105,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(549, 54);
+            this.label4.Location = new System.Drawing.Point(587, 54);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(59, 23);
             this.label4.TabIndex = 6;
@@ -129,6 +130,7 @@
             this.dgv.RowTemplate.Height = 25;
             this.dgv.Size = new System.Drawing.Size(1049, 262);
             this.dgv.TabIndex = 8;
+            this.dgv.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CellClick);
             this.dgv.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgv_CellFormatting);
             // 
             // txtStudent
@@ -138,7 +140,7 @@
             this.txtStudent.PlaceholderText = "Search student";
             this.txtStudent.Size = new System.Drawing.Size(241, 23);
             this.txtStudent.TabIndex = 9;
-            this.txtStudent.TextChanged += new System.EventHandler(this.txtStudent_TextChanged);
+            this.txtStudent.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtStudent_KeyDown);
             // 
             // label6
             // 
@@ -160,11 +162,22 @@
             this.lboxStudent.TabIndex = 11;
             this.lboxStudent.SelectedIndexChanged += new System.EventHandler(this.lboxStudent_SelectedIndexChanged);
             // 
+            // btnSearch
+            // 
+            this.btnSearch.Location = new System.Drawing.Point(488, 80);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(75, 26);
+            this.btnSearch.TabIndex = 12;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1082, 499);
+            this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.lboxStudent);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtStudent);
@@ -178,7 +191,8 @@
             this.Controls.Add(this.cbbCampus);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Check Attendent";
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -199,5 +213,6 @@
         private System.Windows.Forms.TextBox txtStudent;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ListBox lboxStudent;
+        private System.Windows.Forms.Button btnSearch;
     }
 }

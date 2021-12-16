@@ -7,5 +7,6 @@ namespace FapClient.Core.Repository
     {
         List<Student> GetAllByCampus(string campus);
 
+        List<Student> Search(string name);
     }
 }

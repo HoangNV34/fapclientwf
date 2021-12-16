@@ -71,3 +71,4 @@ F:\Git Project\fapclientwf\FapClientWF\FapClient.GUI\obj\Debug\net5.0-windows\Fa
 F:\Git Project\fapclientwf\FapClientWF\FapClient.GUI\obj\Debug\net5.0-windows\ref\FapClient.GUI.dll
 F:\Git Project\fapclientwf\FapClientWF\FapClient.GUI\obj\Debug\net5.0-windows\FapClient.GUI.pdb
 F:\Git Project\fapclientwf\FapClientWF\FapClient.GUI\obj\Debug\net5.0-windows\FapClient.GUI.genruntimeconfig.cache
+F:\Git Project\fapclientwf\FapClientWF\FapClient.GUI\obj\Debug\net5.0-windows\FapClient.GUI.EditForm.resources
